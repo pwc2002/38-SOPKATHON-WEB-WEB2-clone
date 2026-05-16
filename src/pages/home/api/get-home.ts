@@ -1,5 +1,5 @@
 import { type ServerUserRole } from '@/pages/home/types';
-import { publicInstance } from '@/shared/api';
+import { publicInstance } from '@/shared/api/axios';
 
 interface HomeProgress {
   currentStep: 1 | 2 | 3 | 4;
