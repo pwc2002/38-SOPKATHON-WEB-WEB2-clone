@@ -1,5 +1,5 @@
 @theme {
-    /* system color */
+  /* system color */
   --color-black: #010101;
   --color-white: #ffffff;
   --color-muted: #988f90;
@@ -31,9 +31,8 @@
 }
 
 :root {
-  --font-pretendard:
-    "Pretendard", ui-sans-serif, system-ui, sans-serif;
-  
+  --font-pretendard: 'Pretendard', ui-sans-serif, system-ui, sans-serif;
+
   --typo-head-sb-24: 2.4rem;
   --typo-head-r-24: 2.4rem;
   --typo-head-sb-22: 2.2rem;
