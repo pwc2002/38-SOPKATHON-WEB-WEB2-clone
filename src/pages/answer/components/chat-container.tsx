@@ -6,11 +6,16 @@ import OpponentAnswerCard from './opponent-answer-card';
 type UserRole = 'parent' | 'child';
 
 interface ChatContainerProps {
-  role: UserRole;
+  onCompleteAnswer?: () => void;
   opponentHasAnswer: boolean;
+  role: UserRole;
 }
 
-const ChatContainer = ({ role, opponentHasAnswer }: ChatContainerProps) => {
+const ChatContainer = ({
+  onCompleteAnswer,
+  opponentHasAnswer,
+  role,
+}: ChatContainerProps) => {
   return (
     <section className='flex w-full flex-col gap-[2.4rem]'>
       {/* 상대방 */}
@@ -26,7 +31,7 @@ const ChatContainer = ({ role, opponentHasAnswer }: ChatContainerProps) => {
         <Chip size='small' variant='me'>
           나
         </Chip>
-        <MyAnswerCard />
+        <MyAnswerCard onCompleteAnswer={onCompleteAnswer} />
       </div>
     </section>
   );
