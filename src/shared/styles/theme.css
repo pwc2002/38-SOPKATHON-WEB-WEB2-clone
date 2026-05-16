@@ -30,7 +30,7 @@
   --color-primary-50: #fff0f8;
 }
 
-:root {
+@theme {
   --font-pretendard: 'Pretendard', ui-sans-serif, system-ui, sans-serif;
 
   --typo-head-sb-24: 2.4rem;
