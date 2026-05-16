@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import { IcArrowRight, IcCameraFilled } from '@/shared/assets/icons';
+import { IcCameraFilled, IcChevronRight } from '@/shared/assets/icons';
 
 interface RecordCardProps {
   question: string;
@@ -20,7 +20,7 @@ const RecordCard = ({ question, date, to }: RecordCardProps) => {
       <div className='flex flex-1 flex-col gap-[0.4rem]'>
         <div className='flex items-center justify-between gap-[0.8rem]'>
           <h3 className='typo-body-sb-16 text-neutral-900'>{question}</h3>
-          <IcArrowRight className='h-[2rem] w-[2rem] text-neutral-200' />
+          <IcChevronRight className='h-[2rem] w-[2rem] text-neutral-200' />
         </div>
         <time className='typo-caption-r-12 text-neutral-200'>{date}</time>
       </div>
